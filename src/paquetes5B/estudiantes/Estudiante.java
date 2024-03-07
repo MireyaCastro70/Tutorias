@@ -6,7 +6,7 @@ public class Estudiante {
 
     private String nombre;
     private int matricula;
-    private String carrear;
+    private String carrera;
 
     public String getNombre() {
         return nombre;
@@ -28,7 +28,7 @@ public class Estudiante {
         return carrear;
     }
 
-    public void setCarrear(String carrear) {
-        this.carrear = carrear;
+    public void setCarrear(String carrera) {
+        this.carrera = carrera;
     }
 }
