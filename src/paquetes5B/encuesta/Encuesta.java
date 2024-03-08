@@ -9,7 +9,11 @@ public class Encuesta {
         this.i++;
     }
     public String getReactivo(int folio){
-
         return reactivos == null?null:reactivos[folio].getReactivo();
+
+    public String showEncuesta(){
+        for (int j = 0; i < 100 ; j++){
+            System.out.println(getReactivo(j));
+        }
     }
 }
