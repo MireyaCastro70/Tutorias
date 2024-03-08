@@ -5,7 +5,8 @@ public class Encuesta {
     private int i = 0;
 
     public void addReactivo(String r){
-        this.reactivos[this.i] = r;
+        this.reactivos[this.i] = new Reactivo();
+        this.reactivos[this.i].setPregunta(r);
         this.i++;
     }
     public String getReactivo(int folio){
