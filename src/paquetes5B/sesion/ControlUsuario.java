@@ -1,9 +1,9 @@
 package paquetes5B.sesion;
-public class ControlUsuarios {
+public class ControlUsuario {
 
     private Usuarios[] usuarios;
 
-    public ControlUsuarios() {
+    public ControlUsuario() {
         this.usuarios = new Usuarios[10];
     }
 
