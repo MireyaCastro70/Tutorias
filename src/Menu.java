@@ -11,7 +11,7 @@ public class Menu {
         ControlUsuario controlUsuario;
         ControlEstudiante controlEstudiante;
         Encuesta encuesta;
-        public static void crearMenu(){
+
             int opc=0;
             do{
                 JOptionPane.showInputDialog("\nBienvenido"
@@ -29,14 +29,26 @@ public class Menu {
 
                 switch (opc){
                     case 1:
-
+                        System.out.println("Ingresa un nombre de usuario");
+                        String usuario = entrada.nextLine();
+                        System.out.println("Ingresa una contrasennia");
+                        String pass = entrada.nextLine();
+                        System.out.println("Ingresa el nombre");
+                        String nombre = entrada.nextLine();
+                        controlUsuario.addUsuario(usuario,pass,nombre);
                         break;
 
                     case 2:
 
                         break;
                     case 3:
-
+                        System.out.println("Ingresa la matricula");
+                        String matricula = entrada.nextLine();
+                        System.out.println("Ingresa el nombre");
+                        String nombre = entrada.nextLine();
+                        System.out.println("Ingresa la carrera");
+                        String carrera = entrada.nextLine();
+                        controlUsuario.addUsuario(matricula,nombre,carrera);
                         break;
                     case 4:
 
@@ -59,5 +71,5 @@ public class Menu {
 
             } while(opc<=9);
         }
-    }
+
 }
