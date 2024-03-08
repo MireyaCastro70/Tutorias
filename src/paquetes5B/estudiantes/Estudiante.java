@@ -25,7 +25,7 @@ public class Estudiante {
     }
 
     public String getCarrear() {
-        return carrear;
+        return carrera;
     }
 
     public void setCarrear(String carrera) {
