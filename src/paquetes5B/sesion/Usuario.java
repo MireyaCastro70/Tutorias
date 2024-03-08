@@ -1,6 +1,6 @@
 package paquetes5B.sesion;
 
-public class Usuarios {
+public class Usuario {
     private String usuarios;
     private String contrasennia;
     private String nombre;
