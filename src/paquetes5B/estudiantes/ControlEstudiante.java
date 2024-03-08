@@ -12,12 +12,14 @@ public class ControlEstudiante {
                 this.estudiantes [i].setCarrera(carrera);
                 this.i++;
         }
-        public String getEstudiante(){
-                return estudiante;
+        public String getEstudiante(int matricula){
+                return null;
         }
-        public String showEncuesta(){
-                for (int j = 0; i < 100 ; j++){
-                        System.out.println(getEstudiante(j));
+        public void showEstudiante(){
+                for (int j = 0; j<i ; j++){
+                        System.out.println(estudiantes[j].getNombre());
+                        System.out.println(estudiantes[j].getMatricula());
+                        System.out.println(estudiantes[j].getCarrera());
                 }
         }
 }
