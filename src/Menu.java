@@ -43,21 +43,23 @@ public class Menu {
                         break;
                     case 3:
                         System.out.println("Ingresa la matricula");
-                        String matricula = entrada.nextLine();
+                        int matricula = entrada.nextLine();
                         System.out.println("Ingresa el nombre");
-                        String nombre = entrada.nextLine();
+                        String nombree = entrada.nextLine();
                         System.out.println("Ingresa la carrera");
                         String carrera = entrada.nextLine();
-                        controlUsuario.addUsuario(matricula,nombre,carrera);
+                        controlEstudiante.addEstudiantes(matricula,nombree,carrera);
                         break;
                     case 4:
-
+                        controlEstudiante.showEstudiante();
                         break;
                     case 5:
-
+                        System.out.println("Agrega una pregunta");
+                        String r = entrada.nextLine();
+                        encuesta.addReactivo(r);
                         break;
                     case 6:
-
+                        encuesta.showEncuesta();
                         break;
                     case 7:
 
