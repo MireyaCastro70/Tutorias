@@ -14,7 +14,7 @@ public class Menu {
 
             int opc=0;
             do{
-                JOptionPane.showInputDialog("\nBienvenido"
+                System.out.println("\nBienvenido"
                         +"\n1. Agregar Usuario"
                         +"\n2. Mostrar Usuario"
                         +"\n3. Agregar estudiante"
@@ -23,8 +23,8 @@ public class Menu {
                         +"\n6. Mostrar reactivo"
                         +"\n7. Agregar respuesta"
                         +"\n8. Mostrar respuesta"
-                        +"\n9. Salir");
-                System.out.println("\nElige una opcion: ");
+                        +"\n9. Salir"
+                        +"\nElige una opcion: ");
                 opc=entrada.nextInt();
 
                 switch (opc){
