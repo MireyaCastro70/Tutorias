@@ -8,7 +8,7 @@ public class ControlUsuario {
     }
 
     public void addUsuario(String usuario, String pass, String nombre) {
-        this.usuarios[numusuarios] = new usuarios(usuario, pass, nombre);
+        this.usuarios[numusuarios] = new Usuario(usuario, pass, nombre);
       numusuarios ++;
     }
 

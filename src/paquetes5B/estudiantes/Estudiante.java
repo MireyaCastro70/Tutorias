@@ -24,11 +24,11 @@ public class Estudiante {
         this.matricula = matricula;
     }
 
-    public String getCarrear() {
+    public String getCarrera() {
         return carrera;
     }
 
-    public void setCarrear(String carrera) {
+    public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
 }

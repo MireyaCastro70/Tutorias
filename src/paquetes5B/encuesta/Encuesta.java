@@ -12,10 +12,9 @@ public class Encuesta {
     public String getReactivo(int folio){
         return reactivos == null?null:reactivos[folio].getPregunta();
     }
-    public String showEncuesta(){
+    public void showEncuesta(){
         for (int j = 0; i < 100 ; j++){
             System.out.println(getReactivo(j));
         }
-        return  System.out.println("Fin del Arreglo");
     }
 }
