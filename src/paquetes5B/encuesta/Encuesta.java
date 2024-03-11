@@ -5,15 +5,17 @@ public class Encuesta {
     private int i = 0;
 
     public void addReactivo(String r){
-        this.reactivos[this.i] = r;
+        this.reactivos[this.i] = new Reactivo();
+        this.reactivos[this.i].setPregunta(r);
         this.i++;
     }
     public String getReactivo(int folio){
-        return reactivos == null?null:reactivos[folio].getReactivo();
+        return reactivos == null?null:reactivos[folio].getPregunta();
     }
     public String showEncuesta(){
         for (int j = 0; i < 100 ; j++){
             System.out.println(getReactivo(j));
         }
+        return  System.out.println("Fin del Arreglo");
     }
 }

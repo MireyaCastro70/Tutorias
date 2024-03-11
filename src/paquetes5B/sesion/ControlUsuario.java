@@ -1,17 +1,18 @@
 package paquetes5B.sesion;
 public class ControlUsuario {
-
-    private Usuarios[] usuarios;
+    private int numusuarios = 0;
+    private Usuario[] usuarios;
 
     public ControlUsuario() {
-        this.usuarios = new Usuarios[10];
+        this.usuarios = new Usuario[10];
     }
 
     public void addUsuario(String usuario, String pass, String nombre) {
-
+        this.usuarios[numusuarios] = new usuarios(usuario, pass, nombre);
+      numusuarios ++;
     }
 
     public String getUsuario(int id) {
-        return null;
+        return usuarios [id].getUsuarios();
     }
 }
