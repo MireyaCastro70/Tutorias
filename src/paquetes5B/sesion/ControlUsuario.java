@@ -8,7 +8,11 @@ public class ControlUsuario {
     }
 
     public void addUsuario(String usuario, String pass, String nombre) {
-        this.usuarios[numusuarios] = new Usuario(usuario, pass, nombre);
+        this.usuarios[numusuarios] = new Usuario();
+        this.usuarios[numusuarios].setUsuarios(usuario);
+        this.usuarios[numusuarios].setNombre(nombre);
+        this.usuarios[numusuarios].setContrasennia(pass);
+
       numusuarios ++;
     }
 
