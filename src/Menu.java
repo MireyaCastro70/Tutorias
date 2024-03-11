@@ -8,9 +8,9 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        ControlUsuario controlUsuario;
-        ControlEstudiante controlEstudiante;
-        Encuesta encuesta;
+        ControlUsuario controlUsuario = new ControlUsuario();
+        ControlEstudiante controlEstudiante = new ControlEstudiante();
+        Encuesta encuesta = new Encuesta();
 
             int opc=0;
             do{
@@ -43,7 +43,7 @@ public class Menu {
                         break;
                     case 3:
                         System.out.println("Ingresa la matricula");
-                        int matricula = entrada.nextLine();
+                        int matricula = Integer.parseInt(entrada.nextLine());
                         System.out.println("Ingresa el nombre");
                         String nombree = entrada.nextLine();
                         System.out.println("Ingresa la carrera");
