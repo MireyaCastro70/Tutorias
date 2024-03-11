@@ -39,7 +39,7 @@ public class Menu {
                         break;
 
                     case 2:
-
+                        System.out.println("Lista de usuarios");
                         break;
                     case 3:
                         System.out.println("Ingresa la matricula");
@@ -51,6 +51,7 @@ public class Menu {
                         controlEstudiante.addEstudiantes(matricula,nombree,carrera);
                         break;
                     case 4:
+                        System.out.println("Lista de estudiantes");
                         controlEstudiante.showEstudiante();
                         break;
                     case 5:
@@ -59,6 +60,7 @@ public class Menu {
                         encuesta.addReactivo(r);
                         break;
                     case 6:
+                        System.out.println("Lista de preguntas");
                         encuesta.showEncuesta();
                         break;
                     case 7:
